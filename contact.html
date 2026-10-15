@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="travel_recommendation.css">
+        <title>TravelBloom - Contact Us</title>
+        <style>
+            form button, form input, textarea {
+                width: 100%;
+                border: 0.1px solid white;
+                border-radius: 5px;
+                margin: 10px 0px;
+            }
+
+            form button {
+                background-color: #0b7a75;
+                color: white;
+                border: none;
+                padding: 4px 0px
+            }
+            form input, textarea {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: white;
+            }
+
+        
+            .contact-us {
+                max-width: none;
+                width: 100vw;
+                padding-right: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar">
+        
+            <!--  Le Logo et le Titre -->
+            <div class="nav-logo">
+                <div class="logo-placeholder">🌐</div> 
+                <h1>TravelBloom</h1>
+            </div>
+
+            <!--  Les Liens de navigation -->
+            <ul class="nav-links">
+                <li><a href="travel_recommendation.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+
+
+        <!-- Section principale -->
+        <main class="main-section">
+    
+            <!--  Barre latérale pour les réseaux sociaux -->
+            <div class="social-sidebar">
+                <a href="#" class="social-icon">
+                    <img src="images/fb_icon.svg" alt="">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/insta_icon.jpg" alt="">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/x_logo.png" alt="">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/ytb_icon.svg" alt="">
+                </a>
+            </div>
+        
+            <div class="main-content contact-us">
+                <div>
+
+                    <h2 class="main-title">CONTACT US</h2>
+                    <p class="main-description">
+                        Get in touch.
+                    </p>
+                </div>
+
+                <!-- Form section -->
+                <form action="" method="GET">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" required ><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required ><br>
+                    <label for="message"> Message </label><br>
+                    <textarea name="message" id="message" cols="30" rows="6"  required></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+
+        </main>
+
+
+    </body>
+</html>

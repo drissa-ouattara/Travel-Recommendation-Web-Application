@@ -1,0 +1,303 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edf3f8;
+    color: #1d2a39;
+}
+
+/* navigation bar */
+.navbar {
+    background: linear-gradient(90deg, #2f4f61 0%, #2b4d69 45%, #355f78 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 42px;
+    color: white;
+    height: 82px;
+    width: 100%;
+    box-shadow: 0 4px 18px rgba(15, 31, 42, 0.18);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+}
+
+.logo-placeholder {
+    font-size: 28px;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.nav-logo h1 {
+    font-size: 32px;
+    font-style: italic;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.search-container {
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    padding: 8px 10px 8px 16px;
+    border-radius: 999px;
+    gap: 8px;
+    width: 420px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 0;
+    padding: 0 10px 0 0;
+    border-radius: 999px;
+}
+
+.search-input-wrapper input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #1f2d3d;
+    background: transparent;
+}
+
+.search-icon {
+    color: #4a90e2;
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.btn-search,
+.btn-clear {
+    border: none;
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-search {
+    background: linear-gradient(135deg, #1ba3a0 0%, #0e7f7d 100%);
+    color: white;
+}
+
+.btn-clear {
+    background: #dfeef6;
+    color: #1f2d3d;
+}
+
+.btn-search:hover,
+.btn-clear:hover {
+    opacity: 0.96;
+    transform: translateY(-1px);
+}
+
+/* Main content */
+.main-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    min-height: calc(100vh - 82px);
+    padding: 40px 80px 40px 100px;
+    background: linear-gradient(rgba(17, 61, 79, 0.38), rgba(8, 29, 44, 0.55)),
+        url('images/new_york_city.jpg') center/cover no-repeat;
+}
+
+.social-sidebar {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 16px 10px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.06);
+}
+
+.social-icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.main-content {
+    position: relative;
+    max-width: 700px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: rgba(9, 26, 42, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 18px;
+    padding: 28px 24px;
+    backdrop-filter: blur(4px);
+}
+
+.main-title {
+    font-size: clamp(3rem, 6vw, 7rem);
+    font-weight: 800;
+    line-height: 0.9;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-description {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.96;
+    background-color: rgba(0, 0, 0, 0.12);
+    padding: 16px 18px;
+    border-radius: 10px;
+}
+
+.btn-book {
+    background: linear-gradient(135deg, #0d8a84 0%, #0c6b69 100%);
+    color: white;
+    border: none;
+    padding: 14px 26px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    width: fit-content;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-book:hover {
+    opacity: 0.96;
+    transform: translateY(-1px);
+}
+
+/* Affichage des cartes */
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.card-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
+}
+
+.recommandation-card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(15, 31, 42, 0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recommandation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(15, 31, 42, 0.16);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.35rem;
+    color: #1f2d3d;
+    font-weight: 700;
+}
+
+.card-description {
+    margin: 0;
+    font-size: 0.96rem;
+    color: #58687a;
+    line-height: 1.5;
+}
